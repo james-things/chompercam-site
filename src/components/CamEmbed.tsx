@@ -22,7 +22,7 @@ export class CamEmbed extends React.Component<MyProps, MyState> {
     return (
       <div className="flex px-10 pt-5">
         <div className="container mx-auto flex max-w-screen-lg rounded border-2 border-gray-500">
-          <img className="mx-auto p-10" src='http://192.168.50.79:8080/0' alt='Chomper is taking a short break!'/>
+          <img className="mx-auto p-10" src='http://localhost:8080/0' alt='Chomper is taking a short break!'/>
         </div>
       </div>
     );

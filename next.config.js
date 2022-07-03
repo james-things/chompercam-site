@@ -12,6 +12,6 @@ module.exports = {
   // You can remove `basePath` if you don't need it.
   reactStrictMode: true,
   images: {
-    domains: ['192.168.50.79', '174.57.153.211'],
+    domains: ['192.168.50.79', '174.57.153.211', 'localhost', '127.0.0.1'],
   },
 };
