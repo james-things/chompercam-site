@@ -1,55 +1,48 @@
-import * as React from "react";
+import * as React from 'react';
 
-interface MyProps {};
+interface MyProps {}
 
 type MyState = {
-    count: number; // like this
+  count: number; // like this
 };
 
-export class Navbar extends React.Component<MyProps, MyState> {
-    static displayName = 'MyComponent';
+export default class Navbar extends React.Component<MyProps, MyState> {
+  static displayName = 'MyComponent';
 
-    constructor(props: MyProps) {
-        super(props);
-    };
+  constructor(props: MyProps) {
+    super(props);
+  }
 
-    state: MyState = {
-        // optional second annotation for better type inference
-        count: 0,
-    };
+  state: MyState = {
+    // optional second annotation for better type inference
+    count: 0,
+  };
 
-    render() {
-        return (
-            <div>
-                <div className="navbar bg-base-100">
-                    <div className="flex-1">
-                        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
-                    </div>
-                    <div className="flex-none gap-2">
-                        <div className="form-control">
-                            <input type="text" placeholder="Search" className="input input-bordered"/>
-                        </div>
-                        <div className="dropdown dropdown-end">
-                            <label className="btn btn-ghost btn-circle avatar">
-                                <div className="w-10 rounded-full">
-                                    <img src="https://placeimg.com/80/80/people"/>
-                                </div>
-                            </label>
-                            <ul
-                                className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
-                                <li>
-                                    <a className="justify-between">
-                                        Profile
-                                        <span className="badge">New</span>
-                                    </a>
-                                </li>
-                                <li><a>Settings</a></li>
-                                <li><a>Logout</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div className="navbar bg-base-100">
+        <div className="flex-1">
+          <a className="btn btn-ghost text-xl normal-case">Chomper Cam!</a>
+        </div>
+        <div className="flex-none">
+          <ul className="menu menu-horizontal p-0">
+            <li>
+              <a>
+                Learn More
+                <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                     viewBox="0 0 24 24">
+                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                </svg>
+              </a>
+              <ul className="bg-base-100 p-2">
+                <li><a>Meet Chomper</a></li>
+                <li><a>About This Page</a></li>
+              </ul>
+            </li>
+            <li><a>Donate</a></li>
+          </ul>
+        </div>
+      </div>
+    );
+  }
 }
