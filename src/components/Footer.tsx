@@ -20,15 +20,14 @@ export class Footer extends React.Component<MyProps, MyState> {
 
   render() {
     return (
-      <footer style={{ position: 'absolute', bottom: 0, width: '100%' }} className="footer footer-center rounded bg-base-200 p-10 text-base-content">
-        <div className="grid-cols-3">
-          <div className="flex">
-            <img className="my-3 max-h-14 px-1" src="/chomper-smile.png" alt="chomper-smile" />
-            <img className="-my-3 max-h-20" src="/chomper-dance.png" alt="chomper-dance" />
-            <img className="my-3 max-h-14 px-2" src="/chomper-smile.png" alt="chomper-smile" />
+      <footer className="footer footer-center rounded bg-base-200 p-10 text-base-content">
+        <div className="flex flex-row flex-nowrap container justify-center">
+
+          <div className="">
+              <img className="my-3 max-h-20 px-1" src="/chompers-left.png" alt="chomper-smile" />
           </div>
 
-          <div>
+          <div className="flex-grow">
             App created using {' '}
             <a className="hover:text-blue-400 hover:underline" href="https://nextjs.org/">Next.js</a>
             ,{' '}
@@ -42,11 +41,10 @@ export class Footer extends React.Component<MyProps, MyState> {
             </div>
           </div>
 
-          <div className="flex">
-            <img className="my-3 max-h-14 px-1" src="/chomper-smile.png" alt="chomper-smile" />
-            <img className="-my-3 max-h-20" src="/chomper-dance.png" alt="chomper-dance" />
-            <img className="my-3 max-h-14 px-2" src="/chomper-smile.png" alt="chomper-smile" />
+          <div className="">
+            <img className="my-3 max-h-20 px-1" src="/chompers-right.png" alt="chomper-smile" />
           </div>
+
         </div>
       </footer>
     );
