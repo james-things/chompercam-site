@@ -10,13 +10,13 @@ export default function Home() {
       <Head>
         <title>chomper.live - Chomper Cam!</title>
       </Head>
-      <header className="h-16">
+      <header>
         <Navbar />
       </header>
-      <main className="mb-auto h-10">
+      <main className="mb-auto">
         <CamEmbed />
       </main>
-      <footer className="h-6">
+      <footer>
         <Footer />
       </footer>
     </div>
