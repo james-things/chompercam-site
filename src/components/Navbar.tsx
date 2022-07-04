@@ -55,7 +55,7 @@ export default class Navbar extends React.Component<MyProps, MyState> {
               </ul>
             </li>
             <li>
-              <a className="text-sm lg:text-base">
+              <a className="text-sm lg:text-base" href="https://www.buymeacoffee.com/gPKIjH2QrP">
                 Donations
               </a>
             </li>
