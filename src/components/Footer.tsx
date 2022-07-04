@@ -20,7 +20,7 @@ export class Footer extends React.Component<MyProps, MyState> {
 
   render() {
     return (
-      <footer className="footer footer-center rounded bg-base-200 p-10 text-base-content">
+      <footer className="footer footer-center rounded bg-base-200 p-0 text-base-content">
         <div className="flex flex-row flex-nowrap container justify-center">
 
           <div className="">
@@ -34,11 +34,16 @@ export class Footer extends React.Component<MyProps, MyState> {
             <a className="hover:text-blue-400 hover:underline" href="https://daisyui.com/">Daisy UI</a>
             , and{' '}
             <a className="hover:text-blue-400 hover:underline" href="https://tailwindcss.com/">TailwindCSS</a>
+            {' '}-{' '}
+            <a className="hover:text-blue-400 hover:underline" href="https://github.com/james-things/chompercam-site/">GitHub Project</a>
+
+
 
             <div className="pt-4">
               Art by{' '}
               <a className="hover:text-blue-400 hover:underline" href="https://twitter.com/sayyestogiygas">@SayYesToGiygas</a>
             </div>
+
           </div>
 
           <div className="">
