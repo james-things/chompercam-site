@@ -20,12 +20,12 @@ export default class Navbar extends React.Component<MyProps, MyState> {
 
   render() {
     return (
-      <div className="navbar bg-base-100 flex">
+      <div className="navbar bg-base-100">
         <div className="flex-1 pr-4">
           <a className="btn btn-ghost text-lg lg:text-xl normal-case">Chomper Cam</a>
         </div>
         <div className="flex-none">
-          <ul className="menu menu-horizontal">
+          <ul className="menu menu-horizontal p-0">
             <li>
               <a className="text-sm lg:text-base">
                 Learn More
