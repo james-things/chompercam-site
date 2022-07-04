@@ -21,13 +21,13 @@ export class Footer extends React.Component<MyProps, MyState> {
   render() {
     return (
       <footer className="footer footer-center rounded bg-base-200 p-0 text-base-content">
-        <div className="flex flex-row flex-nowrap container justify-center">
+        <div className="container flex flex-row flex-nowrap justify-center">
 
           <div className="">
               <img className="my-3 max-h-20 px-1" src="/chompers-left.png" alt="chomper-smile" />
           </div>
 
-          <div className="flex-grow">
+          <div className="grow">
             App created using {' '}
             <a className="hover:text-blue-400 hover:underline" href="https://nextjs.org/">Next.js</a>
             ,{' '}

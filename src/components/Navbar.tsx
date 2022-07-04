@@ -1,3 +1,4 @@
+import Link from "next/link";
 import * as React from 'react';
 
 interface MyProps {}
@@ -22,7 +23,11 @@ export default class Navbar extends React.Component<MyProps, MyState> {
     return (
       <div className="navbar bg-base-200">
         <div className="flex-1 pr-4">
-          <a className="btn btn-ghost text-lg lg:text-xl normal-case" href="/">Chomper Cam</a>
+          <Link href="/">
+            <a className="btn btn-ghost text-lg normal-case lg:text-xl">
+              Chomper Cam
+            </a>
+          </Link>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal p-0">
@@ -60,9 +65,11 @@ export default class Navbar extends React.Component<MyProps, MyState> {
               </ul>
             </li>
             <li>
-              <a className="text-sm lg:text-base" href="https://www.buymeacoffee.com/gPKIjH2QrP" target="_blank">
-                Donations
-              </a>
+              <Link  href="https://www.buymeacoffee.com/gPKIjH2QrP">
+                <a className="text-sm lg:text-base" target="_blank" >
+                  Donations
+                </a>
+              </Link>
             </li>
           </ul>
         </div>
