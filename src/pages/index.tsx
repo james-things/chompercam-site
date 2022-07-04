@@ -1,7 +1,8 @@
+import * as React from 'react';
 import Head from 'next/head';
 
-import { CamEmbed } from '../components/CamEmbed';
-import { Footer } from '../components/Footer';
+import { CamEmbed } from '@/components/CamEmbed';
+import { Footer } from '@/components/Footer';
 import Navbar from '../components/Navbar';
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
       <header>
         <Navbar />
       </header>
-      <main className="mb-auto">
+      <main className="inline-block align-middle">
         <CamEmbed />
       </main>
       <footer>

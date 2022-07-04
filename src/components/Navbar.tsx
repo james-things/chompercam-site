@@ -20,9 +20,9 @@ export default class Navbar extends React.Component<MyProps, MyState> {
 
   render() {
     return (
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-200">
         <div className="flex-1 pr-4">
-          <a className="btn btn-ghost text-lg lg:text-xl normal-case">Chomper Cam</a>
+          <a className="btn btn-ghost text-lg lg:text-xl normal-case" href="/">Chomper Cam</a>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal p-0">
@@ -34,7 +34,7 @@ export default class Navbar extends React.Component<MyProps, MyState> {
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
                 </svg>
               </a>
-              <ul className="bg-base-100">
+              <ul className="bg-base-200">
                 {/*
                 <li>
                   <a className="text-sm lg:text-base">
@@ -49,13 +49,18 @@ export default class Navbar extends React.Component<MyProps, MyState> {
                 */}
                 <li>
                   <a className="text-sm lg:text-base">
-                    Coming Soon
+                    Coming Soon!
+                  </a>
+                </li>
+                <li>
+                  <a className="text-sm lg:text-base">
+                    Coming Soon!
                   </a>
                 </li>
               </ul>
             </li>
             <li>
-              <a className="text-sm lg:text-base" href="https://www.buymeacoffee.com/gPKIjH2QrP">
+              <a className="text-sm lg:text-base" href="https://www.buymeacoffee.com/gPKIjH2QrP" target="_blank">
                 Donations
               </a>
             </li>
