@@ -3,8 +3,8 @@ import * as React from 'react';
 
 import { CamEmbed } from '@/components/CamEmbed';
 import { Footer } from '@/components/Footer';
-
 import Navbar from '../components/Navbar';
+
 
 export default function Home() {
   return (
