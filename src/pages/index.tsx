@@ -1,17 +1,17 @@
+import {atom, useAtom} from 'jotai'
+import { AboutPage } from "jotai/components/AboutPage";
+import { MeetChomper } from "jotai/components/MeetChomper";
 import Head from 'next/head';
 import * as React from 'react';
 
-import { useAtom } from 'jotai'
-import { pageAtom } from "jotai/atoms/index";
-import { MediaEmbed } from '@/components/MediaEmbed';
 import { Footer } from '@/components/Footer';
+import { MediaEmbed } from '@/components/MediaEmbed';
 import Navbar from '@/components/Navbar';
-import { MeetChomper } from "jotai/components/MeetChomper";
-import { AboutPage } from "jotai/components/AboutPage";
 
+const pageAtom = atom("index");
 
 export default function Home() {
-    const [page] = useAtom(pageAtom);
+    const [page, setPage] = useAtom(pageAtom);
 
     console.log({page});
 
@@ -22,7 +22,7 @@ export default function Home() {
             </Head>
 
             <header>
-                <Navbar />
+                <Navbar setPage={setPage}/>
             </header>
 
             <main className="inline-block align-middle">
@@ -39,5 +39,6 @@ export default function Home() {
                 <Footer />
             </footer>
         </div>
+
     );
 }

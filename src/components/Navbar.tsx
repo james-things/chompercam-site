@@ -1,15 +1,11 @@
-import * as React from 'react';
+import {Provider} from 'jotai'
 import Link from 'next/link';
-import {useAtom} from 'jotai'
-import {pageAtom} from "jotai/atoms/index";
+import * as React from 'react';
 
-// interface NavbarProps {}
-
-export default function Navbar() {
-    // @ts-ignore
-  const [page, setPage] = useAtom(pageAtom);
+export default function Navbar({setPage}: any) {
 
     return (
+        <Provider>
       <div className="navbar bg-base-200">
         <div className="flex-1 pr-4">
           <div
@@ -58,6 +54,7 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
+        </Provider>
     );
   }
 
