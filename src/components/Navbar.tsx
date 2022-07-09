@@ -1,33 +1,23 @@
-import Link from "next/link";
 import * as React from 'react';
+import Link from 'next/link';
+import {useAtom} from 'jotai'
+import {pageAtom} from "jotai/atoms/index";
 
-interface MyProps {}
+// interface NavbarProps {}
 
-type MyState = {
-  count: number; // like this
-};
+export default function Navbar() {
+    // @ts-ignore
+  const [page, setPage] = useAtom(pageAtom);
 
-export default class Navbar extends React.Component<MyProps, MyState> {
-  static displayName = 'MyComponent';
-
-  constructor(props: MyProps) {
-    super(props);
-  }
-
-  state: MyState = {
-    // optional second annotation for better type inference
-    count: 0,
-  };
-
-  render() {
     return (
       <div className="navbar bg-base-200">
         <div className="flex-1 pr-4">
-          <Link href="/">
-            <a className="btn btn-ghost text-lg normal-case lg:text-xl">
-              Chomper Cam
-            </a>
-          </Link>
+          <div
+              className="btn btn-ghost text-lg normal-case lg:text-xl"
+              onClick={() => setPage('index')}
+          >
+            Chomper Cam
+          </div>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal p-0">
@@ -40,27 +30,21 @@ export default class Navbar extends React.Component<MyProps, MyState> {
                 </svg>
               </a>
               <ul className="bg-base-200">
-                {/*
                 <li>
-                  <a className="text-sm lg:text-base">
+                  <div
+                      className="text-sm lg:text-base"
+                      onClick={() => setPage('MeetChomper')}
+                  >
                     Meet Chomper
-                  </a>
+                  </div>
                 </li>
                 <li>
-                  <a className="text-sm lg:text-base">
+                  <div
+                      className="text-sm lg:text-base"
+                      onClick={() => setPage('AboutPage')}
+                  >
                     About This Page
-                  </a>
-                </li>
-                */}
-                <li>
-                  <a className="text-sm lg:text-base">
-                    Coming Soon!
-                  </a>
-                </li>
-                <li>
-                  <a className="text-sm lg:text-base">
-                    Coming Soon!
-                  </a>
+                  </div>
                 </li>
               </ul>
             </li>
@@ -76,4 +60,4 @@ export default class Navbar extends React.Component<MyProps, MyState> {
       </div>
     );
   }
-}
+

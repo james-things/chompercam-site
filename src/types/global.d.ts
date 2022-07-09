@@ -2,4 +2,8 @@
  * Global type definitions
  */
 
-export {};
+type PageState = {
+    index: number;
+    aboutChomper: number;
+    aboutThisPage: number;
+};

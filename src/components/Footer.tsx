@@ -1,19 +1,19 @@
 import * as React from 'react';
 
-interface MyProps {}
+interface FooterProps {}
 
-type MyState = {
+type FooterState = {
   count: number; // like this
 };
 
-export class Footer extends React.Component<MyProps, MyState> {
+export class Footer extends React.Component<FooterProps, FooterState> {
   static displayName = 'MyComponent';
 
-  constructor(props: MyProps) {
+  constructor(props: FooterProps) {
     super(props);
   }
 
-  state: MyState = {
+  state: FooterState = {
     // optional second annotation for better type inference
     count: 0,
   };
@@ -28,22 +28,14 @@ export class Footer extends React.Component<MyProps, MyState> {
           </div>
 
           <div className="grow">
-            App created using {' '}
+            App running{' '}
             <a className="hover:text-blue-400 hover:underline" href="https://nextjs.org/">Next.js</a>
-            ,{' '}
+            {' '}and{' '}
             <a className="hover:text-blue-400 hover:underline" href="https://daisyui.com/">Daisy UI</a>
-            , and{' '}
-            <a className="hover:text-blue-400 hover:underline" href="https://tailwindcss.com/">TailwindCSS</a>
+            {' '}-{' '}Art Credit:{' '}
+            <a className="hover:text-blue-400 hover:underline" href="https://twitter.com/SayYesToGiygas/status/1156653898582700032">Twitter</a>
             {' '}-{' '}
-            <a className="hover:text-blue-400 hover:underline" href="https://github.com/james-things/chompercam-site/">GitHub Project</a>
-
-
-
-            <div className="pt-4">
-              Art by{' '}
-              <a className="hover:text-blue-400 hover:underline" href="https://twitter.com/sayyestogiygas">@SayYesToGiygas</a>
-            </div>
-
+            <a className="hover:text-blue-400 hover:underline" href="https://github.com/james-things/chompercam-site/">View Project on GitHub</a>
           </div>
 
           <div className="">
