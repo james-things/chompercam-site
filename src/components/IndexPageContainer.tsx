@@ -15,8 +15,8 @@ export default function IndexPageContainer() {
         <div className="drawer">
             <input id="main-drawer-toggle-btn" type="checkbox" className="drawer-toggle"/>
             <div className="drawer-content flex flex-col justify-between">
-                <div className="navbar bg-base-200">
-                    <div className="flex-1 md:hidden">
+                <div className="navbar max-h-16 bg-base-200">
+                    <div className="flex-none md:hidden">
                         <label htmlFor="main-drawer-toggle-btn" className="btn btn-ghost btn-square">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block h-6 w-6 stroke-current">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -31,10 +31,10 @@ export default function IndexPageContainer() {
                             Chomper Cam
                         </div>
                     </div>
-                    <div className="invisible shrink md:visible">
-                        <ul className="menu menu-horizontal p-0">
+                    <div className="invisible md:visible">
+                        <ul className="menu menu-horizontal">
                             <li>
-                                <a className="text-sm lg:text-base">
+                                <a className="text-base">
                                     Learn More
                                     <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                          viewBox="0 0 24 24">
@@ -44,7 +44,7 @@ export default function IndexPageContainer() {
                                 <ul className="bg-base-200">
                                     <li>
                                         <div
-                                            className="text-sm lg:text-base"
+                                            className="text-base"
                                             onClick={() => setPage('MeetChomper')}
                                         >
                                             Meet Chomper
@@ -52,7 +52,7 @@ export default function IndexPageContainer() {
                                     </li>
                                     <li>
                                         <div
-                                            className="text-sm lg:text-base"
+                                            className="text-base"
                                             onClick={() => setPage('AboutPage')}
                                         >
                                             About This Page
@@ -62,7 +62,7 @@ export default function IndexPageContainer() {
                             </li>
                             <li>
                                 <Link  href="https://www.buymeacoffee.com/gPKIjH2QrP">
-                                    <a className="text-sm lg:text-base" target="_blank" >
+                                    <a className="text-base" target="_blank" >
                                         Donations
                                     </a>
                                 </Link>
@@ -70,7 +70,7 @@ export default function IndexPageContainer() {
                         </ul>
                     </div>
                 </div>
-                <div className="flex px-2 py-0 lg:px-5">
+                <div className="flex px-2 lg:px-5">
                     <div className="mx-auto max-w-6xl rounded border-2 border-gray-500">
                         {page === "index" && <MediaEmbed />}
                         {page === "MeetChomper" && <MeetChomper />}

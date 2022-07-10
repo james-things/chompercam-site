@@ -6,7 +6,7 @@ import * as React from 'react';
 export default function Home() {
 
     return (
-        <div className="overflow-hidden">
+        <div className="w-full overflow-hidden">
             <Head>
                 <title>chomper.live - Chomper Cam!</title>
             </Head>

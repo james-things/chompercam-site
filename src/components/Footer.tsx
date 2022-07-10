@@ -20,11 +20,11 @@ export class Footer extends React.Component<FooterProps, FooterState> {
 
   render() {
     return (
-      <footer className="footer footer-center bg-base-200 p-0 text-base-content">
+      <footer className="footer footer-center bg-base-200 text-base-content min-h-16 max-h-20">
         <div className="container flex flex-row flex-nowrap justify-center">
 
           <div className="">
-              <img className="my-3 max-h-20 px-1" src="/chompers-left.png" alt="chomper-smile" />
+              <img className="max-h-12 px-1" src="/chompers-left.png" alt="chomper-smile" />
           </div>
 
           <div className="grow">
@@ -37,7 +37,7 @@ export class Footer extends React.Component<FooterProps, FooterState> {
           </div>
 
           <div className="">
-            <img className="my-3 max-h-20 px-1" src="/chompers-right.png" alt="chomper-smile" />
+            <img className="max-h-12 px-1" src="/chompers-right.png" alt="chomper-smile" />
           </div>
 
         </div>
