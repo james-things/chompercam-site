@@ -16,7 +16,7 @@ export default function IndexPageContainer() {
             <input id="main-drawer-toggle-btn" type="checkbox" className="drawer-toggle hidden"/>
             <div className="drawer-content flex flex-col">
                 <div className="navbar max-h-16 flex-none bg-base-200">
-                    <div className="flex-none md:hidden">
+                    <div className="md:hidden">
                         <label htmlFor="main-drawer-toggle-btn" className="btn btn-ghost btn-square">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block h-6 w-6 stroke-current">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -70,15 +70,15 @@ export default function IndexPageContainer() {
                         </ul>
                     </div>
                 </div>
-
-                <div className="flex grow flex-col justify-center p-2 px-2 lg:px-5">
-                    <div className="max-w-6xl rounded border-2 border-gray-500">
+                <div id="empty-space" className="grow" />
+                <div className="flex justify-center px-2 lg:px-5">
+                    <div className="grow max-w-6xl rounded border-2 border-gray-500">
                         {page === "index" && <MediaEmbed />}
                         {page === "MeetChomper" && <MeetChomper />}
                         {page === "AboutPage" && <AboutPage />}
                     </div>
                 </div>
-
+                <div id="empty-space" className="grow" />
                 {/* The footer is implemented here. This is a logically wonky implementation
                     which should be reconsidered in the future. */}
                 <div className="flex-none">
