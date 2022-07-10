@@ -1,4 +1,5 @@
 import * as React from 'react';
+import ReactMarkdown from 'react-markdown';
 
 interface AboutPageProps {}
 
@@ -20,27 +21,59 @@ export class AboutPage extends React.Component<AboutPageProps, AboutPageState> {
 
     render() {
         return (
-            <div className="flex">
-                <div className="">
+            <div className="mx-auto flex flex-col p-1">
                     <div className="prose p-2">
-                        <h1>About This Page</h1>
-                    </div>
-                    <div className="prose p-2">
-                        Coming soon! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. In eu mi bibendum neque egestas congue.
+                        <h1>About This App</h1>
                     </div>
 
                     <div className="prose p-2">
-                        Quis commodo odio aenean sed adipiscing diam donec adipiscing. Turpis cursus in hac habitasse platea.
-                        Morbi tristique senectus et netus et malesuada. Quis lectus nulla at volutpat.
+                        This web app began as a weekend project with the goal of setting up some form of remote
+                        monitoring for my pet lizard, so that I could make sure that his lights were working properly
+                        while I was away for a few days. Once I got the camera stream up and running on a Raspberry Pi,
+                        I got the bug to go a bit further with everything in the hopes that I might learn a bit along the way.
                     </div>
 
                     <div className="prose p-2">
-                        Quam quisque id diam vel quam elementum pulvinar etiam. Quis imperdiet massa tincidunt nunc pulvinar
-                        sapien et ligula ullamcorper. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam erat.
-                        Facilisis sed odio morbi quis commodo odio aenean sed.
+                        Some technical information about this project:
+                        <ReactMarkdown className="prose-sm p-0 pl-4">
+                            {`
+                
+### Hardware
+* Raspberry Pi 4b running Ubuntu Server Edition
+
+### Software Stack
+* Apache Web Server
+* Motion Server
+* Node.js Server
+* Javascript App
+
+### Languages and Frameworks
+* TypeScript
+* Next.JS
+* Tailwind CSS
+* Jotai
+* Daisy UI    
+                            `}
+                        </ReactMarkdown>
+                        The next planned steps are to add some additional content and install a SSL certificate
+                        on the Motion server, so that I can re-enable SSL on the Apache server.
                     </div>
-                </div>
+
+                    <div className="prose p-2">
+                        Feel free to check out the project at the Github link below. Please bear in mind
+                        this is an experimental project which I am currently working on for fun in my spare
+                        time, so commits may be a bit frequent and messy. In the future I intend to document
+                        the setup and configuration process, as there were a number of stumbling blocks, and I
+                        found myself at the far reaches of the internet looking for answers at times!
+                    </div>
+
+                    <div className="prose flex p-2">
+                        <a className="grid grid-cols-2 items-center hover:text-blue-400 hover:underline" href="https://github.com/james-things/chompercam-site/">
+                            <img className="max-h-12 grid-cols-1 justify-self-end" src="/github.png" alt="github-logo" />
+                            <div className="grid-cols-1 justify-self-center">Github Project</div>
+                        </a>
+                    </div>
+
             </div>
         );
     }

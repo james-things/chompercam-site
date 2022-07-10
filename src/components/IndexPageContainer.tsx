@@ -71,8 +71,8 @@ export default function IndexPageContainer() {
                     </div>
                 </div>
                 <div id="empty-space" className="grow" />
-                <div className="flex justify-center px-2 lg:px-5">
-                    <div className="grow max-w-6xl rounded border-2 border-gray-500">
+                <div className="flex justify-center p-2 lg:p-5">
+                    <div className="max-w-6xl grow rounded border-2 border-gray-500">
                         {page === "index" && <MediaEmbed />}
                         {page === "MeetChomper" && <MeetChomper />}
                         {page === "AboutPage" && <AboutPage />}

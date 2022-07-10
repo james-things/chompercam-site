@@ -20,7 +20,7 @@ export class MeetChomper extends React.Component<MeetChomperProps, MeetChomperSt
 
     render() {
         return (
-            <div className="flex">
+            <div className="mx-auto flex flex-col p-1">
                 <div className="">
                     <div className="prose p-2">
                         <h1>Meet Chomper</h1>
