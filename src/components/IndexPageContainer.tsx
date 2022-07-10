@@ -31,7 +31,7 @@ export default function IndexPageContainer() {
                             Chomper Cam
                         </div>
                     </div>
-                    <div className="flex-shrink invisible md:visible">
+                    <div className="invisible shrink md:visible">
                         <ul className="menu menu-horizontal p-0">
                             <li>
                                 <a className="text-sm lg:text-base">
@@ -83,7 +83,7 @@ export default function IndexPageContainer() {
             </div>
             <div className="drawer-side">
                 <label htmlFor="main-drawer-toggle-btn" className="drawer-overlay"></label>
-                <ul className="menu p-4 overflow-y-auto w-80 bg-base-100">
+                <ul className="menu w-80 overflow-y-auto bg-base-100 p-4">
                     <li>
                         <div
                             className="text-lg lg:text-xl"
