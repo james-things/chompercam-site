@@ -1,11 +1,9 @@
-import {Provider} from 'jotai'
 import Link from 'next/link';
 import * as React from 'react';
 
 export default function Navbar({setPage}: any) {
 
     return (
-        <Provider>
       <div className="navbar bg-base-200">
         <div className="flex-1 pr-4">
           <div
@@ -54,7 +52,6 @@ export default function Navbar({setPage}: any) {
           </ul>
         </div>
       </div>
-        </Provider>
     );
   }
 

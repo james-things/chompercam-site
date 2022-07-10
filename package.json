@@ -30,6 +30,7 @@
     "@types/react-dom": "^18.0.5",
     "@typescript-eslint/eslint-plugin": "^5.30.3",
     "@typescript-eslint/parser": "^5.30.3",
+    "babel-plugin-inline-react-svg": "^2.0.1",
     "chalk": "^5.0.1",
     "chokidar": "^3.5.3",
     "constant-case": "^3.0.4",
