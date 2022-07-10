@@ -20,7 +20,7 @@ export class Footer extends React.Component<FooterProps, FooterState> {
 
   render() {
     return (
-      <footer className="footer footer-center bg-base-200 text-base-content min-h-16 max-h-20">
+      <footer className="footer footer-center min-h-16 max-h-20 bg-base-200 text-base-content">
         <div className="container flex flex-row flex-nowrap justify-center">
 
           <div className="">

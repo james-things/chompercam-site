@@ -13,9 +13,9 @@ export default function IndexPageContainer() {
 
     return (
         <div className="drawer">
-            <input id="main-drawer-toggle-btn" type="checkbox" className="drawer-toggle"/>
-            <div className="drawer-content flex flex-col justify-between">
-                <div className="navbar max-h-16 bg-base-200">
+            <input id="main-drawer-toggle-btn" type="checkbox" className="drawer-toggle hidden"/>
+            <div className="drawer-content flex flex-col">
+                <div className="navbar max-h-16 flex-none bg-base-200">
                     <div className="flex-none md:hidden">
                         <label htmlFor="main-drawer-toggle-btn" className="btn btn-ghost btn-square">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block h-6 w-6 stroke-current">
@@ -70,17 +70,22 @@ export default function IndexPageContainer() {
                         </ul>
                     </div>
                 </div>
-                <div className="flex px-2 lg:px-5">
-                    <div className="mx-auto max-w-6xl rounded border-2 border-gray-500">
+
+                <div className="flex grow flex-col justify-center p-2 px-2 lg:px-5">
+                    <div className="max-w-6xl rounded border-2 border-gray-500">
                         {page === "index" && <MediaEmbed />}
                         {page === "MeetChomper" && <MeetChomper />}
                         {page === "AboutPage" && <AboutPage />}
                     </div>
                 </div>
+
                 {/* The footer is implemented here. This is a logically wonky implementation
                     which should be reconsidered in the future. */}
-                <Footer />
+                <div className="flex-none">
+                    <Footer />
+                </div>
             </div>
+
             <div className="drawer-side">
                 <label htmlFor="main-drawer-toggle-btn" className="drawer-overlay"></label>
                 <ul className="menu w-80 overflow-y-auto bg-base-100 p-4">
