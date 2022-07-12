@@ -1,5 +1,3 @@
-import Head from 'next/head';
-import * as React from 'react';
 import {atom, useAtom} from "jotai";
 import {AboutApp} from "jotai/components/AboutApp";
 import {Footer} from "jotai/components/Footer";
@@ -7,8 +5,10 @@ import {MediaEmbed} from "jotai/components/MediaEmbed";
 import {MeetChomper} from "jotai/components/MeetChomper";
 import Navbar from "jotai/components/Navbar";
 import SideMenu from "jotai/components/SideMenu";
+import Head from 'next/head';
+import * as React from 'react';
 
-const pageAtom = atom("AboutApp");
+const pageAtom = atom("index");
 
 export default function Home() {
     const [page, setPage] = useAtom(pageAtom);

@@ -21,7 +21,7 @@ export class AboutApp extends React.Component<AboutAppProps, AboutAppState> {
 
     render() {
         return (
-            <div className="md:grid md:grid-cols-2 mx-auto flex flex-col flex-nowrap p-1">
+            <div className="mx-auto flex flex-col flex-nowrap p-1 md:grid md:grid-cols-2">
                 <div className="prose p-2 md:col-span-1 md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2">
                     <h1>About This App</h1>
                 </div>
@@ -44,7 +44,7 @@ export class AboutApp extends React.Component<AboutAppProps, AboutAppState> {
                 </div>
 
                 <div className="prose p-2 md:col-span-1 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3">
-                    <div className="md:text-center underline">
+                    <div className="underline md:text-center">
                         Some technical information about this project:
                     </div>
 
