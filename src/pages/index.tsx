@@ -8,7 +8,7 @@ import {MeetChomper} from "jotai/components/MeetChomper";
 import Navbar from "jotai/components/Navbar";
 import SideMenu from "jotai/components/SideMenu";
 
-const pageAtom = atom("AboutApp");
+const pageAtom = atom("index");
 
 export default function Home() {
     const [page, setPage] = useAtom(pageAtom);
