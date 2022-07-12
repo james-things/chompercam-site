@@ -35,9 +35,9 @@ export default function Navbar({setPage}: any) {
                 <li>
                   <div
                       className="text-sm lg:text-base"
-                      onClick={() => setPage('AboutPage')}
+                      onClick={() => setPage('AboutApp')}
                   >
-                    About This Page
+                    About This App
                   </div>
                 </li>
               </ul>

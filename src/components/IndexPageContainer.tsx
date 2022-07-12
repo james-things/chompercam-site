@@ -1,12 +1,12 @@
 import {atom, useAtom} from "jotai";
-import {AboutPage} from "jotai/components/AboutPage";
+import {AboutApp} from "jotai/components/AboutApp";
 import {Footer} from "jotai/components/Footer";
 import {MediaEmbed} from "jotai/components/MediaEmbed";
 import {MeetChomper} from "jotai/components/MeetChomper";
 import Link from 'next/link';
 import * as React from 'react';
 
-const pageAtom = atom("index");
+const pageAtom = atom("AboutApp");
 
 export default function IndexPageContainer() {
     const [page, setPage] = useAtom(pageAtom);
@@ -53,7 +53,7 @@ export default function IndexPageContainer() {
                                     <li>
                                         <div
                                             className="text-base"
-                                            onClick={() => setPage('AboutPage')}
+                                            onClick={() => setPage('AboutApp')}
                                         >
                                             About This Page
                                         </div>
@@ -75,7 +75,7 @@ export default function IndexPageContainer() {
                     <div className="max-w-6xl grow rounded border-2 border-gray-500">
                         {page === "index" && <MediaEmbed />}
                         {page === "MeetChomper" && <MeetChomper />}
-                        {page === "AboutPage" && <AboutPage />}
+                        {page === "AboutApp" && <AboutApp />}
                     </div>
                 </div>
                 <div id="empty-space" className="grow" />

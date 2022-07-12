@@ -14,4 +14,5 @@ module.exports = {
   images: {
     domains: ['192.168.50.79', '174.57.153.211', 'localhost', '127.0.0.1'],
   },
+  experimental: { images: { allowFutureImage: true } },
 };
