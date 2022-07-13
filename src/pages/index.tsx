@@ -23,8 +23,8 @@ export default function Home() {
                 <div className="drawer-content flex flex-col">
                     <Navbar setPage={setPage}/>
                     <div id="empty-space" className="grow" />
-                    <div className="flex justify-center p-2 lg:p-5">
-                        <div className="max-w-6xl grow rounded border-2 border-gray-500">
+                    <div className="flex justify-center p-5">
+                        <div className="rounded-box max-w-6xl grow rounded border-2 border-gray-500 bg-base-100">
                             {page === "index" && <MediaEmbed />}
                             {page === "MeetChomper" && <MeetChomper />}
                             {page === "AboutApp" && <AboutApp />}
