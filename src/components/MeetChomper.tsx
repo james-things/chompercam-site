@@ -20,25 +20,69 @@ export class MeetChomper extends React.Component<MeetChomperProps, MeetChomperSt
 
     render() {
         return (
-            <div className="mx-auto flex flex-col p-1">
-                <div className="">
-                    <div className="prose p-2">
-                        <h1>Meet Chomper</h1>
-                    </div>
-                    <div className="prose p-2">
-                        Coming soon! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. In eu mi bibendum neque egestas congue.
+            <div className="mx-auto flex flex-col flex-nowrap p-1 md:grid md:grid-cols-2">
+                <div className="prose p-2 md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2">
+                    <h1>Meet Chomper</h1>
+                </div>
+
+                <div className="prose p-2 md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3">
+                    <p>
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                    </p>
+
+                    <p>
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                    </p>
+
+                    <p>
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                    </p>
+
+                    <div className="prose flex p-2 md:col-start-1 md:col-end-2 md:row-start-3 md:row-end-4">
+                        <a className="flex flex-row items-center hover:text-blue-400 hover:underline" href="https://github.com/james-things/chompercam-site/">
+                            <img className="max-h-12" src="/github.png" alt="github-logo" />
+                            <div className="">Check out this project on GitHub</div>
+                        </a>
                     </div>
 
-                    <div className="prose p-2">
-                        Quis commodo odio aenean sed adipiscing diam donec adipiscing. Turpis cursus in hac habitasse platea.
-                        Morbi tristique senectus et netus et malesuada. Quis lectus nulla at volutpat.
-                    </div>
+                </div>
 
-                    <div className="prose p-2">
-                        Quam quisque id diam vel quam elementum pulvinar etiam. Quis imperdiet massa tincidunt nunc pulvinar
-                        sapien et ligula ullamcorper. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam erat.
-                        Facilisis sed odio morbi quis commodo odio aenean sed.
+                <div className="prose p-2 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3 md:items-end">
+                    <p>
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                    </p>
+
+                    <p>
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                    </p>
+
+                    <p>
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                        Meet chomper content coming soon! Meet chomper content coming soon!
+                    </p>
+
+                    <div className="prose flex p-2 md:col-start-1 md:col-end-2 md:row-start-3 md:row-end-4">
+                        <a className="flex flex-row items-center hover:text-blue-400 hover:underline" href="https://github.com/james-things/chompercam-site/">
+                            <img className="max-h-12" src="/github.png" alt="github-logo" />
+                            <div className="">Check out this project on GitHub</div>
+                        </a>
                     </div>
                 </div>
             </div>
