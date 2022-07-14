@@ -31,7 +31,7 @@ export class MeetChomper extends React.Component<MeetChomperProps, MeetChomperSt
                         <div className="prose p-2 md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3">
                             <p>
                                 Chomper is a male Leopard Gecko who we believe is approximately two years old.
-                                We didn't plan on getting a lizard as a pet; but one day we came across someone
+                                We didn&apos;t plan on getting a lizard as a pet; but one day we came across someone
                                 who was trying to find someone to take the gecko that they could no longer house.
                                 He was very skinny and had lost nearly all of his coloring so we immediately seized
                                 the opportunity and took him in.
@@ -40,7 +40,7 @@ export class MeetChomper extends React.Component<MeetChomperProps, MeetChomperSt
                             <p>
                                 Despite his frail stature, as soon as we put some crickets in his new tank
                                 he leapt into action and ate them all, each with a with a surprisingly aggressive
-                                chomp - and with that "Chomper" was officially the newest member of the family.
+                                chomp - and with that &ldquo;Chomper&rdquo; was officially the newest member of the family.
                                 As you will see if you check in often, Chomper is no longer skinny and unhealthy.
                                 He is now close to full grown, at a healthy weight, and regaining his coloring
                                 as time passes.
