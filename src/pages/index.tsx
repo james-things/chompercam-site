@@ -18,24 +18,21 @@ export default function Home() {
             <Head>
                 <title>chomper.live - Chomper Cam!</title>
             </Head>
+
             <div className="drawer">
                 <input id="main-drawer-toggle-btn" type="checkbox" className="drawer-toggle hidden"/>
                 <div className="drawer-content flex flex-col">
                     <Navbar setPage={setPage}/>
                     <div id="empty-space" className="grow" />
-                    <div className="flex justify-center p-5">
-                        <div className="rounded-box max-w-6xl grow rounded border-2 border-gray-500 bg-base-100">
-                            {page === "index" && <MediaEmbed />}
-                            {page === "MeetChomper" && <MeetChomper />}
-                            {page === "AboutApp" && <AboutApp />}
-                        </div>
+                    <div className="flex justify-center p-2 md:p-5">
+                        {page === "index" && <MediaEmbed />}
+
+                        {page === "MeetChomper" && <MeetChomper />}
+
+                        {page === "AboutApp" && <AboutApp />}
                     </div>
                     <div id="empty-space" className="grow" />
-                    {/* The footer is implemented here. This is a logically wonky implementation
-                        which should be reconsidered in the future. */}
-                    <div className="flex-none">
-                        <Footer />
-                    </div>
+                    <Footer />
                 </div>
 
                 <div className="drawer-side">
