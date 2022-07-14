@@ -61,10 +61,6 @@ export class MeetChomper extends React.Component<MeetChomperProps, MeetChomperSt
                                 has a slight occasional wobble, and it usually only presents itself when he is
                                 excited and trying to search about for something quickly.
                             </p>
-
-                            <p>
-                                Photos will be added soon below!
-                            </p>
                         </div>
                     </div>
                     <Carousel />
