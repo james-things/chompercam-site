@@ -16,6 +16,12 @@ export default function Home() {
     return (
         <div className="w-full overflow-auto">
             <Head>
+                <meta charSet="UTF-8" />
+                <meta name="description" content="Chomper Cam - Lizard Live Cam - Live feedings and care 24/7!" />
+                <meta name="keywords" content="gecko, gecko-cam, lizard, chomper, live, leapord gecko, leopard gecko,
+                livecam, Live-cam, lizard-cam, feeding, gecko" />
+                <meta name="author" content="James Harris" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>chomper.live - Chomper Cam!</title>
             </Head>
 
