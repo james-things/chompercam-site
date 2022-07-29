@@ -15,7 +15,6 @@ export class MeetChomper extends React.Component<MeetChomperProps, MeetChomperSt
     }
 
     state: MeetChomperState = {
-        // optional second annotation for better type inference
         // count: 0,
     };
 
@@ -42,7 +41,7 @@ export class MeetChomper extends React.Component<MeetChomperProps, MeetChomperSt
 
                             <p>
                                 Despite his frail stature, as soon as we put some crickets in his new tank
-                                he leapt into action and ate them one by one with an aggressive 'chomp,' and
+                                he leapt into action and ate them one by one with an aggressive &apos;chomp,&apos; and
                                 with that he had his name. Today, Chomper is no longer skinny and unhealthy.
                                 He is now healthy and slowly regaining his coloring over time.
                             </p>
@@ -50,7 +49,7 @@ export class MeetChomper extends React.Component<MeetChomperProps, MeetChomperSt
                             <p>
                                 When we first got Chomper, he was suffering from Metabolic Bone Disease, which
                                 a common occurrence in Leopard Geckos when they do not get adequate nutrition.
-                                With this disease, the reptile's bones become softer and weaker, and eventually they
+                                With this disease, the reptile&apos;s bones become softer and weaker, and eventually they
                                 become unable to properly support their own weight, as was the case with Chomper.
                             </p>
                         </div>
@@ -69,7 +68,7 @@ export class MeetChomper extends React.Component<MeetChomperProps, MeetChomperSt
                                 For example, when we first took him in, cleaning his enclosure was a major ordeal,
                                 to the point I was afraid he would bite me or drop his tail. Now he has learned that it
                                 is a non-threatening activity that sometimes even stirs up hidden bugs, and he usually
-                                "participates" by exploring around displaying excited body language while I clean.
+                                &lqot;participates&rquot; by exploring around displaying excited body language while I clean.
                             </p>
 
                             <p>
