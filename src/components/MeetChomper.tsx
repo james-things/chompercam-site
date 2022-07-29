@@ -41,7 +41,7 @@ export class MeetChomper extends React.Component<MeetChomperProps, MeetChomperSt
 
                             <p>
                                 Despite his frail stature, as soon as we put some crickets in his new tank
-                                he leapt into action and ate them one by one with an aggressive &apos;chomp,&apos; and
+                                he leapt into action and ate them one by one with an aggressive &quot;chomp,&quot; and
                                 with that he had his name. Today, Chomper is no longer skinny and unhealthy.
                                 He is now healthy and slowly regaining his coloring over time.
                             </p>
@@ -68,7 +68,7 @@ export class MeetChomper extends React.Component<MeetChomperProps, MeetChomperSt
                                 For example, when we first took him in, cleaning his enclosure was a major ordeal,
                                 to the point I was afraid he would bite me or drop his tail. Now he has learned that it
                                 is a non-threatening activity that sometimes even stirs up hidden bugs, and he usually
-                                &lqot;participates&rquot; by exploring around displaying excited body language while I clean.
+                                &quot;participates&quot; by exploring around displaying excited body language while I clean.
                             </p>
 
                             <p>
