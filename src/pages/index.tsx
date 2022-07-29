@@ -14,18 +14,18 @@ export default function Home() {
     const [page, setPage] = useAtom(pageAtom);
 
     return (
-        <div className="w-full overflow-auto">
+        <div>
             <Head>
                 <meta charSet="UTF-8" />
                 <meta name="description" content="Chomper Cam - Lizard Live Cam - Live feedings and care 24/7!" />
                 <meta name="keywords" content="gecko, gecko-cam, lizard, chomper, live, leapord gecko, leopard gecko,
-                livecam, Live-cam, lizard-cam, feeding, gecko" />
+                livecam, live-cam, lizard-cam, feeding, animal cam, pet cam" />
                 <meta name="author" content="James Harris" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>chomper.live - Chomper Cam!</title>
             </Head>
 
-            <div className="drawer">
+            <div className="drawer w-full overflow-auto">
                 <input id="main-drawer-toggle-btn" type="checkbox" className="drawer-toggle hidden"/>
                 <div className="drawer-content flex flex-col">
                     <Navbar setPage={setPage}/>

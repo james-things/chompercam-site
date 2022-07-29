@@ -4,7 +4,7 @@ import * as React from 'react';
 interface MeetChomperProps {}
 
 type MeetChomperState = {
-    count: number; // like this
+    // count: number; // like this
 };
 
 export class MeetChomper extends React.Component<MeetChomperProps, MeetChomperState> {
@@ -16,7 +16,7 @@ export class MeetChomper extends React.Component<MeetChomperProps, MeetChomperSt
 
     state: MeetChomperState = {
         // optional second annotation for better type inference
-        count: 0,
+        // count: 0,
     };
 
     render() {
@@ -28,42 +28,56 @@ export class MeetChomper extends React.Component<MeetChomperProps, MeetChomperSt
                             <h1>Meet Chomper</h1>
                         </div>
 
-                        <div className="prose p-2 md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3">
+                        <div className="w-full md:col-span-2 md:col-start-1 md:col-end-3 md:row-start-2 md:row-end-3">
+                            <Carousel />
+                        </div>
+
+                        <div className="prose p-2 md:col-start-1 md:col-end-2 md:row-start-3 md:row-end-4">
                             <p>
-                                Chomper is a male Leopard Gecko who we believe is approximately two years old.
-                                We didn&apos;t plan on getting a lizard as a pet, but one day we came across someone
-                                who was trying to find someone to take the gecko that they could no longer house.
-                                He was very skinny and had lost nearly all of his coloring so we immediately seized
-                                the opportunity and took him in.
+                                Chomper is a male Leopard Gecko who we believe is about two years old.
+                                We didn&apos;t plan on getting him, but one day we came across someone
+                                who was looking to give him away. He was skinny and had lost most of his coloring,
+                                so we took him in.
                             </p>
 
                             <p>
                                 Despite his frail stature, as soon as we put some crickets in his new tank
-                                he leapt into action and ate them all, each with a with a surprisingly aggressive
-                                chomp - and with that &ldquo;Chomper&rdquo; was officially the newest member of the family.
-                                As you will see if you check in often, Chomper is no longer skinny and unhealthy.
-                                He is now close to full grown, at a healthy weight, and regaining his coloring
-                                as time passes.
+                                he leapt into action and ate them one by one with an aggressive 'chomp,' and
+                                with that he had his name. Today, Chomper is no longer skinny and unhealthy.
+                                He is now healthy and slowly regaining his coloring over time.
+                            </p>
+
+                            <p>
+                                When we first got Chomper, he was suffering from Metabolic Bone Disease, which
+                                a common occurrence in Leopard Geckos when they do not get adequate nutrition.
+                                With this disease, the reptile's bones become softer and weaker, and eventually they
+                                become unable to properly support their own weight, as was the case with Chomper.
                             </p>
                         </div>
 
-                        <div className="prose p-2 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3 md:items-end">
+                        <div className="prose p-2 md:col-start-2 md:col-end-3 md:row-start-3 md:row-end-4 md:items-end">
                             <p>
-                                When we first got Chomper, he was suffering from Metabolic Bone Disease,
-                                or MBD, which is a common result of inadequate calcium levels in these animals.
-                                When we first got Chomper, he struggled to support his weight on his soft bones,
-                                and he would wobble and fall as he walked.
+                                With proper supplementation and well-regulated temperature levels however, he has
+                                almost entirely recovered at this point. He used to be very wobbly and would stand
+                                with his belly on the ground, and now he is almost entirely wobble-free and able to
+                                stand tall!
                             </p>
 
                             <p>
-                                With proper supplementation and well-regulated temperature levels, he has almost
-                                entirely recovered from this condition in the time we have had him. He now only
-                                has a slight occasional wobble, and it usually only presents itself when he is
-                                excited and trying to search about for something quickly.
+                                While Leopard Geckos are not known to be especially intelligent, Chomper still has
+                                a surprising amount of personality and has shown some capacity for simple learning.
+                                For example, when we first took him in, cleaning his enclosure was a major ordeal,
+                                to the point I was afraid he would bite me or drop his tail. Now he has learned that it
+                                is a non-threatening activity that sometimes even stirs up hidden bugs, and he usually
+                                "participates" by exploring around displaying excited body language while I clean.
+                            </p>
+
+                            <p>
+                                It really has been quite fascinating learning about reptiles through Chomper!
                             </p>
                         </div>
                     </div>
-                    <Carousel />
+
                 </div>
             </div>
         );
