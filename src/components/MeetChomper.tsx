@@ -47,7 +47,7 @@ export class MeetChomper extends React.Component<MeetChomperProps, MeetChomperSt
                             </p>
 
                             <p>
-                                When we first got Chomper, he was suffering from Metabolic Bone Disease, which
+                                Initially, Chomper was suffering from Metabolic Bone Disease, which
                                 a common occurrence in Leopard Geckos when they do not get adequate nutrition.
                                 With this disease, the reptile&apos;s bones become softer and weaker, and eventually they
                                 become unable to properly support their own weight, as was the case with Chomper.
@@ -59,16 +59,14 @@ export class MeetChomper extends React.Component<MeetChomperProps, MeetChomperSt
                                 With proper supplementation and well-regulated temperature levels however, he has
                                 almost entirely recovered at this point. He used to be very wobbly and would stand
                                 with his belly on the ground, and now he is almost entirely wobble-free and able to
-                                stand tall!
+                                stand and walk around just fine!
                             </p>
 
                             <p>
                                 While Leopard Geckos are not known to be especially intelligent, Chomper still has
                                 a surprising amount of personality and has shown some capacity for simple learning.
-                                For example, when we first took him in, cleaning his enclosure was a major ordeal,
-                                to the point I was afraid he would bite me or drop his tail. Now he has learned that it
-                                is a non-threatening activity that sometimes even stirs up hidden bugs, and he usually
-                                &quot;participates&quot; by exploring around displaying excited body language while I clean.
+                                He was very shy at first, but with time, he has learned to trust us as his keepers 
+                                and enjoys crawling out of his tank to be handled.
                             </p>
 
                             <p>
