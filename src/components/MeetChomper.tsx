@@ -20,8 +20,8 @@ export class MeetChomper extends React.Component<MeetChomperProps, MeetChomperSt
 
     render() {
         return (
-            <div className="rounded-box max-w-7xl grow rounded border-2 border-gray-500 bg-base-100">
-                <div id="stuff-inside-content-box">
+            <div className="max-w-6xl grow rounded border-2 border-gray-500 bg-base-100">
+                <div className="object-contain" id="stuff-inside-content-box">
                     <div className="mx-auto flex flex-col flex-nowrap p-1 md:grid md:grid-cols-2">
                         <div className="prose p-2 md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2">
                             <h1>Meet Chomper</h1>
