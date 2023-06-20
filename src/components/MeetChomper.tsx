@@ -20,7 +20,7 @@ export class MeetChomper extends React.Component<MeetChomperProps, MeetChomperSt
 
     render() {
         return (
-            <div className="rounded-box max-w-6xl grow rounded border-2 border-gray-500 bg-base-100">
+            <div className="rounded-box max-w-7xl grow rounded border-2 border-gray-500 bg-base-100">
                 <div id="stuff-inside-content-box">
                     <div className="mx-auto flex flex-col flex-nowrap p-1 md:grid md:grid-cols-2">
                         <div className="prose p-2 md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2">
@@ -57,14 +57,6 @@ export class MeetChomper extends React.Component<MeetChomperProps, MeetChomperSt
                                 necessary for Leopard Geckos, but is still beneficial for them. The tank&apos;s temperature and humidity
                                 levels are monitored by a custom-built digital thermometer and hygrometer device, and the tank is cleaned
                                 regularly.
-                            </p>
-
-                            <p>
-                                Though I would not consider myself a reptile person, Chomper has been a great pet and I have enjoyed
-                                caring for him. He is a very interesting animal to watch and interact with (per his own volition),
-                                and I am glad we were able to give him a good home. This website was created as a learning experience,
-                                and also as a way to share Chomper with friends, family, and anyone else who wants to learn about him.
-                                I hope you enjoyed reading about Chomper!
                             </p>
                         </div>
                     </div>
