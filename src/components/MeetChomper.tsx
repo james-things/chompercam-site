@@ -37,7 +37,7 @@ export class MeetChomper extends React.Component<MeetChomperProps, MeetChomperSt
                                 owner was a young child who did not know how to properly care for him, and he was not in the best
                                 health when we originally got him as a result. With time however, he has recovered and become
                                 quite healthy, active, and tame. He is very friendly and enjoys being handled, even choosing
-                                to walk out of his tank onto my hand do so quite frequently!
+                                to walk out of his tank onto my hand to do so quite frequently!
                             </p>
 
                             <p>
